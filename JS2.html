@@ -1,0 +1,80 @@
+<DOCTYPE! html>
+<html lang="en">
+    
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="JS2.css">
+
+    </head>
+    <body>
+         
+         
+         <h2>Sign-up form</h2>
+         <div class="row">
+             <div class="column left">
+         <form   onclick="formValidation()">
+             <div id="container">
+                <div class="input">Username:<input id="username"name="username" type="alphanumeric" required >
+                </div>
+                <div class="input">Password:<input id="password" name="password" type="password"  required>
+                </div>
+             
+                <div class="input">Name:<input id="name" name="name" type="text" required>
+                </div>
+             
+                 <div class="input">Dateofbirth:<input id="dateofbirth" name="dob" type="date" required>
+                 </div>
+             
+                 <div class="input">Address:<input id="address" name="address" type="text" >
+                 </div>
+                 <div class="input">Email:<input id="email" name="email" type="email"   required>
+                 </div>
+                
+                 <div class="input">Sex:
+                <label>Male</label>
+                <input  type="radio" id="sex" value="Male" required>
+                <label>Female</label>
+                <input  type="radio"  id="sex" value="Female" required>
+                </div>
+             
+                 <div class="input">Language:<input id="language" type="checkbox" value="English" required>English
+                    <select name="language" >
+                        <option value="none">none</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Kannada">Kannada</option>
+                    </select>
+                 </div>
+             
+                 <div class="input">About<input id="about" name="about" type="optional" >
+                 </div>
+                <input type="button" name="submit" id="entry" value="Submit" onclick="displayDetails()">
+            </div>
+                
+                
+         </form> 
+        </div>
+         <div class="column right">
+             <table id="display">
+                     <h2>FORM UPDATION IN TABLE</h2>
+                 <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Name</th>
+                    <th>Dateofbirth</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Sex</th>
+                    <th>Language</th>
+                    <th>About</th>
+                </tr>
+
+             </table>
+             
+         </div>
+     </div>
+         <script src="JS2.js"></script>
+    </body>
+   
+</html>
